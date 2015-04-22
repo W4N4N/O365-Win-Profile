@@ -33,6 +33,7 @@ This sample requires the following:
 ##Register and configure the app
 
 TBD -- Link to Wiki page with registration instructions for all unified endpoint samples.
+Permissions: Enable sign-in and read user profile, Read all user's basic profiles, Read all groups (preview)
 
 <a name="build"></a>
 ## Build and debug ##
