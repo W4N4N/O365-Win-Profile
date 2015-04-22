@@ -28,7 +28,7 @@ namespace O365_Win_Profile
 
                 var graphClient = await AuthenticationHelper.GetGraphClientAsync();
 
-                var userResult = await graphClient.users.ExecuteAsync();
+                var userResult = await graphClient.users.Where( u=> u.userType == "Member").ExecuteAsync();
                 userList = userResult.CurrentPage.ToList();
 
                 return userList;
