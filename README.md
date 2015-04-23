@@ -32,8 +32,18 @@ This sample requires the following:
 <a name="register"></a>
 ##Register and configure the app
 
-TBD -- Link to Wiki page with registration instructions for all unified endpoint samples.
-Permissions: Enable sign-in and read user profile, Read all user's basic profiles, Read all groups (preview)
+1.	Sign in to the [Azure Management Portal](http://aka.ms/i5b8dz), using your Azure AD credentials.
+2.	Click **Active Directory** on the left menu, then select the directory for your Office 365 developer site.
+3.	On the top menu, click **Applications**.
+4.	Click **Add** from the bottom menu.
+5.	On the **What do you want to do page**, click **Add an application my organization is developing**.
+6.	On the **Tell us about your application page**, specify **O365-Win-Profile** for the application name and select **NATIVE CLIENT APPLICATION** for type.
+7.	Click the arrow icon on the bottom-right corner of the page.
+8.	On the **Application information** page, specify a **Redirect URI**, for this example, you can specify http://localhost/profileSample, and then select the checkbox in the lower-right hand corner of the page. Remember this value for the below section **Getting the ClientID and RedirectUri into the project**.
+9.	Once the application has been successfully added, you will be taken to the **Quick Start** page for the application. From here, select **Configure** in the top menu.
+10.	Under **permissions to other applications**, add the **Office 365 unified API (preview)** application, and select the **Read all groups (preview)**  and the **Read all users' basic profiles** permissions. permissions.
+11.	Copy the value specified for **Client ID** on the **Configure** page, and be sure to remember the value you specified for the redirect URI.
+12.	Click **Save** in the bottom menu.
 
 <a name="build"></a>
 ## Build and debug ##
@@ -44,11 +54,9 @@ Permissions: Enable sign-in and read user profile, Read all user's basic profile
         <x:String x:Key="ida:AuthorizationUri">https://login.microsoftonline.com</x:String>
 
 2. Open the AuthenticationHelper.cs file and set your redirect URI as the value of this variable:
-
 `private static Uri redirectUri = new Uri("https://<your redirect URI>");`
 
-
-After you've configured the sample, press F5 to build and debug. Run the solution and sign in with your organizational account to Office 365.
+3. Press F5 to build and debug. Run the solution and sign in with your organizational account to Office 365.
 
 <a name="packages"></a>
 ## NuGet packages used in the sample ##
