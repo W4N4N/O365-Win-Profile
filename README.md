@@ -41,7 +41,7 @@ This sample requires the following:
 7.	Click the arrow icon on the bottom-right corner of the page.
 8.	On the **Application information** page, specify a **Redirect URI**, for this example, you can specify http://localhost/profileSample, and then select the checkbox in the lower-right hand corner of the page. Remember this value for the below section **Getting the ClientID and RedirectUri into the project**.
 9.	Once the application has been successfully added, you will be taken to the **Quick Start** page for the application. From here, select **Configure** in the top menu.
-10.	Under **permissions to other applications**, add the **Office 365 unified API (preview)** application, and select the **Read all groups (preview)**  and the **Read all users' basic profiles** permissions. permissions.
+10.	Under **permissions to other applications**, add the **Office 365 unified API (preview)** application, and select the **Read all users' basic profiles** permission.
 11.	Copy the value specified for **Client ID** on the **Configure** page, and be sure to remember the value you specified for the redirect URI.
 12.	Click **Save** in the bottom menu.
 
