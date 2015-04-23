@@ -76,6 +76,8 @@ The NuGet packages used in this sample will load automatically when you build th
 <a name="additional-resources"></a>
 ## Additional resources ##
 
+- [Office 365 Profile Sample for Android](http://aka.ms/o365-android-profile)
+- [Office 365 Profile Sample for iOS](http://aka.ms/o365-iOS-profile)
 - [Office 365 APIs documentation](http://aka.ms/kbwa5c)
 - [Office 365 APIs starter projects and code samples](http://aka.ms/x1kpnz)
 - [Office developer code samples](http://aka.ms/afh45z)
