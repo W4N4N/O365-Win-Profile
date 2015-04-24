@@ -191,7 +191,7 @@ namespace O365_Win_Profile
 
             catch (DataServiceQueryException dsqe)
             {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
+                Debug.WriteLine("Could not get files: " + dsqe.InnerException.Message);
                 return null;
             }
 

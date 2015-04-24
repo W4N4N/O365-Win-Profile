@@ -62,7 +62,6 @@ namespace O365_Win_Profile
             // Setup the navigation helper
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
-            this.navigationHelper.SaveState += navigationHelper_SaveState;
 
             // Setup the logical page navigation components that allow
             // the page to only show one pane at a time.
@@ -99,8 +98,7 @@ namespace O365_Win_Profile
         /// session.  The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            // TODO: Assign a bindable group to Me.DefaultViewModel("Group")
-            // TODO: Assign a collection of bindable items to Me.DefaultViewModel("Items")
+
 
             if (e.PageState == null)
             {
@@ -111,35 +109,9 @@ namespace O365_Win_Profile
                     this.itemsViewSource.View.MoveCurrentToFirst();
                 }
             }
-            else
-            {
-                // Restore the previously saved state associated with this page
-                if (e.PageState.ContainsKey("SelectedItem") && this.itemsViewSource.View != null)
-                {
-                    // TODO: Invoke Me.itemsViewSource.View.MoveCurrentTo() with the selected
-                    //       item as specified by the value of pageState("SelectedItem")
 
-                }
-            }
         }
 
-        /// <summary>
-        /// Preserves state associated with this page in case the application is suspended or the
-        /// page is discarded from the navigation cache.  Values must conform to the serialization
-        /// requirements of <see cref="SuspensionManager.SessionState"/>.
-        /// </summary>
-        /// <param name="sender">The source of the event; typically <see cref="NavigationHelper"/></param>
-        /// <param name="e">Event data that provides an empty dictionary to be populated with
-        /// serializable state.</param>
-        private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
-        {
-            if (this.itemsViewSource.View != null)
-            {
-                // TODO: Derive a serializable navigation parameter and assign it to
-                //       pageState("SelectedItem")
-
-            }
-        }
 
         #region Logical page navigation
 
@@ -372,16 +344,6 @@ namespace O365_Win_Profile
                 UserPhoto.Source = new BitmapImage(new Uri("ms-appx:///assets/UserDefault.png", UriKind.RelativeOrAbsolute));
 
             }
-
-            // To do: Place this list in the left pane when the property becomes available.
-            // Get people this user works with.
-
-            //var workingWithList = await _userOperations.GetUserWorkingWithAsync(DisplayUser.objectId);
-
-            // Get files this user has worked on recently.
-
-            //var trendingAroundList = await _userOperations.GetUserTrendingAroundAsync(DisplayUser.objectId);
-
 
         }
 

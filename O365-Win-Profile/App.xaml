@@ -9,10 +9,10 @@
     <Application.Resources>
         <SolidColorBrush x:Key="SampleHeaderBrush" Color="#007ACC" />
         <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#1799F0" />
-        
 
-
-
+        <!-- Add your client id here. -->
+        <x:String x:Key="ida:ClientID">  </x:String>
+        <x:String x:Key="ida:AuthorizationUri">https://login.microsoftonline.com</x:String>
 
     </Application.Resources>
 

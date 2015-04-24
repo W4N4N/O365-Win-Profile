@@ -26,22 +26,13 @@ namespace O365_Win_Profile
         // Office 365. As a convenience, we load that value into a variable called _commonAuthority, adding _common to this Url to signify
         // multi-tenancy. This way it will always be in sync with whatever value is added to App.xaml.
         
-        // For Prod logins
         private static readonly string CommonAuthority = App.Current.Resources["ida:AuthorizationUri"].ToString() + @"/Common";
         public const string ResourceBetaUrl = "https://graph.microsoft.com/beta/";
         public const string ResourceUrl = "https://graph.microsoft.com/";
 
-        // For PPE logins
-        //private static readonly string CommonAuthority = "https://login.windows-ppe.net/common";
-        //public const string ResourceBetaUrl = "https://graph.microsoft-ppe.com/beta/";
-        //public const string ResourceUrl = "https://graph.microsoft-ppe.com/";
 
-        // For Prod-registered client id
-        private static Uri redirectUri = new Uri("https://GraphConnect.office365.microsoft.com");
-
-        // For PPE-registered client id
-        //private static Uri redirectUri = new Uri("http://graph.redirect.com");
-
+        // Add your redirect URI value here.
+        private static Uri redirectUri = new Uri(" ");
 
 
         private static readonly Uri DiscoveryServiceEndpointUri = new Uri("https://api.office.com/discovery/v1.0/me/");
