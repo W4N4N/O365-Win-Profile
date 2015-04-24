@@ -1,4 +1,4 @@
-# Office 365 Profile Sample for Windows
+# Office 365 Profile sample for Windows
 
 **Table of contents**
 
@@ -8,13 +8,12 @@
 * [Build and debug](#build)
 * [NuGet packages used in the sample](#packages)
 * [Questions and comments](#questions)
-* [Next steps](#next-steps)
 * [Additional resources](#additional-resources)
 
 <a name="introduction"></a>
 ##Introduction
 
-The Office 365 Windows Profile sample uses the **Office 365 unified endpoint (preview)** to fetch user profile data from various services such as Active Directory, SharePoint, Exchange, and OneDrive. 
+The Office 365 Profile sample for Windows uses the Office 365 unified endpoint (preview) to get user profile data from various services such as Active Directory, SharePoint, and OneDrive. 
 
 The first page presents you with a list of users. The second page displays information about any user you choose to view. All of this information, including files shared with the user, the user's email address, hire date, manager, and direct reports, comes from the unified endpoint.
 
@@ -22,12 +21,12 @@ The first page presents you with a list of users. The second page displays infor
 ## Prerequisites ##
 
 This sample requires the following:  
-  - Visual Studio 2013 with Update 3.  
-  - [Office 365 API Tools version 1.3.41104.1](http://aka.ms/k0534n).  
-  - An Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) that includes the resources that you need to start building Office 365 apps.
-  - A Microsoft Azure tenant to register your application. Azure Active Directory provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
+  * Visual Studio 2013 with Update 3.  
+  * [Office 365 API Tools version 1.3.41104.1](http://aka.ms/k0534n).  
+  * An Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) that includes the resources that you need to start building Office 365 apps.
+  * A Microsoft Azure tenant to register your application. Azure Active Directory provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
 
-**Important**: You will also need to ensure your Azure subscription is bound to your Office 365 tenant. To do this see the Active Directory team's blog post, [Creating and Managing Multiple Windows Azure Active Directories](http://aka.ms/lrb3ln). The section **Adding a new directory** will explain how to do this. You can also read [Set up Azure Active Directory access for your Developer Site](http://aka.ms/fv273q) for more information.
+**Important**: You will also need to ensure your Azure subscription is bound to your Office 365 tenant. To do this see the Active Directory team's blog post, [Creating and Managing Multiple Windows Azure Active Directories](http://aka.ms/lrb3ln). In this post, the *Adding a new directory* section will explain how to do this. You can also read [Set up Azure Active Directory access for your Developer Site](http://aka.ms/fv273q) for more information.
 
 <a name="register"></a>
 ##Register and configure the app
@@ -48,12 +47,12 @@ This sample requires the following:
 <a name="build"></a>
 ## Build and debug ##
 
-1. After you've loaded the solution in Visual Studio, configure the sample to use your client id by adding the following keys and their corresponding values to the App.xaml file inside the O365-Win-Profile project:
+1. After you've loaded the solution in Visual Studio, configure the sample to use your client id by adding the following keys and their corresponding values to the App.xaml file inside the O365-Win-Profile project.
 
         <x:String x:Key="ida:ClientID"><your client id></x:String>
         <x:String x:Key="ida:AuthorizationUri">https://login.microsoftonline.com</x:String>
 
-2. Open the AuthenticationHelper.cs file and set your redirect URI as the value of this variable:
+2. Open the AuthenticationHelper.cs file and set your redirect URI as the value of this variable.
 `private static Uri redirectUri = new Uri("https://<your redirect URI>");`
 
 3. Press F5 to build and debug. Run the solution and sign in with your organizational account to Office 365.
@@ -61,7 +60,7 @@ This sample requires the following:
 <a name="packages"></a>
 ## NuGet packages used in the sample ##
 
-The NuGet packages used in this sample will load automatically when you build the solution. If you want to create an app that uses the unified endpoint from scratch, be sure to install the following packages:
+The NuGet packages used in this sample will load automatically when you build the solution. If you want to create an app that uses the unified endpoint, be sure to install the following packages:
 
 1. [Microsoft.IdentityModel.Clients.ActiveDirectory v.2.14](http://aka.ms/rmclss)
 2. Microsoft.Graph
@@ -76,9 +75,12 @@ The NuGet packages used in this sample will load automatically when you build th
 <a name="additional-resources"></a>
 ## Additional resources ##
 
-- [Office 365 Profile Sample for Android](http://aka.ms/o365-android-profile)
-- [Office 365 Profile Sample for iOS](http://aka.ms/o365-iOS-profile)
-- [Office 365 APIs documentation](http://aka.ms/kbwa5c)
+- [Office 365 profile sample for Android](http://aka.ms/o365-android-profile)
+- [Office 365 profile sample for iOS](http://aka.ms/o365-iOS-profile)
+- [Overview of developing on the Office 365 platform](http://aka.ms/kbwa5c)
 - [Office 365 APIs starter projects and code samples](http://aka.ms/x1kpnz)
 - [Office developer code samples](http://aka.ms/afh45z)
 - [Office dev center](http://aka.ms/uftrm1)
+
+## Copyright
+Copyright (c) 2015 Microsoft. All rights reserved.

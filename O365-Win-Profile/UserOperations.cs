@@ -206,69 +206,6 @@ namespace O365_Win_Profile
         }
 
         /// <summary>
-        /// Gets files on which the user is working.
-        /// </summary>
-        /// <returns>List<IFile> </returns>
-        public async Task<List<IFile>> GetUserTrendingAroundAsync(string userId)
-        {
-            try
-            {
-
-                var graphClient = await AuthenticationHelper.GetGraphClientAsync();
-
-                var trendingAroundResult = await graphClient.users.GetById(userId).TrendingAround.ExecuteAsync();
-                var trendingAroundList = trendingAroundResult.CurrentPage.ToList();
-
-                return trendingAroundList;
-            }
-
-            catch (DataServiceQueryException dsqe)
-            {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
-                return null;
-            }
-
-            catch (Exception e)
-            {
-                Debug.WriteLine("Could not get trending around files: " + e.Message);
-                return null;
-            }
-
-        }
-
-        /// <summary>
-        /// Gets users with whom the specified user works.
-        /// </summary>
-        /// <returns>List<IPerson> </returns>
-        public async Task<List<IPerson>> GetUserWorkingWithAsync(string userId)
-        {
-            try
-            {
-
-                var graphClient = await AuthenticationHelper.GetGraphClientAsync();
-
-                var workingWithResult = await graphClient.users.GetById(userId).WorkingWith.ExecuteAsync();
-                var workingWithList = workingWithResult.CurrentPage.ToList();
-
-                return workingWithList;
-            }
-            
-            catch (DataServiceQueryException dsqe )
-            {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
-                return null;
-            }
-
-            catch (Exception e)
-            {
-                Debug.WriteLine("Could not get working with people: " + e.Message);
-                return null;
-            }
-
-        }
-
-
-        /// <summary>
         /// Gets the user's thumbnail photo.
         /// </summary>
         /// <returns>BitmapImage </returns>
