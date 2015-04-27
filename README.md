@@ -47,13 +47,12 @@ This sample requires the following:
 <a name="build"></a>
 ## Build and debug ##
 
-1. After you've loaded the solution in Visual Studio, configure the sample to use your client id by adding the following keys and their corresponding values to the App.xaml file inside the O365-Win-Profile project.
+1. After you've loaded the solution in Visual Studio, configure the sample to use the client id that you registered in Azure Active directory by adding the following key and its corresponding value to the Application.Resources node of the App.xaml file.
+![Office 365 Profile sample](/readme-images/ClientId.png "Client ID value in App.xaml file")`
 
-        <x:String x:Key="ida:ClientID"><your client id></x:String>
-        <x:String x:Key="ida:AuthorizationUri">https://login.microsoftonline.com</x:String>
 
 2. Open the AuthenticationHelper.cs file and set your redirect URI as the value of this variable.
-`private static Uri redirectUri = new Uri("https://<your redirect URI>");`
+![Office 365 Profile sample](/readme-images/RedirectUri.png "Redirect URI value in AuthenticationHelper.cs file")`
 
 3. Press F5 to build and debug. Run the solution and sign in with your organizational account to Office 365.
 
