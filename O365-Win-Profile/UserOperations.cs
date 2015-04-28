@@ -36,7 +36,7 @@ namespace O365_Win_Profile
 
             catch (DataServiceQueryException dsqe)
             {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
+                Debug.WriteLine("Could not get users: " + dsqe.InnerException.Message);
                 return null;
             }
 
@@ -73,7 +73,7 @@ namespace O365_Win_Profile
 
             catch (Exception e)
             {
-                Debug.WriteLine("Could not get user: " + e.Message);
+                Debug.WriteLine("Could not get manager: " + e.Message);
                 return null;
             }
 
@@ -100,7 +100,7 @@ namespace O365_Win_Profile
 
             catch (DataServiceQueryException dsqe)
             {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
+                Debug.WriteLine("Could not get user: " + dsqe.InnerException.Message);
                 return null;
             }
 
@@ -131,7 +131,7 @@ namespace O365_Win_Profile
 
             catch (DataServiceQueryException dsqe)
             {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
+                Debug.WriteLine("Could not get direct reports: " + dsqe.InnerException.Message);
                 return null;
             }
 
@@ -160,14 +160,14 @@ namespace O365_Win_Profile
 
             catch (DataServiceQueryException dsqe)
             {
-                Debug.WriteLine("Could not get working with people: " + dsqe.InnerException.Message);
+                Debug.WriteLine("Could not get groups: " + dsqe.InnerException.Message);
                 return null;
             }
 
             catch (Exception e)
             {
 
-                Debug.WriteLine("Could not get files: " + e.Message);
+                Debug.WriteLine("Could not get groups: " + e.Message);
                 return null;
             }
 
