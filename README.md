@@ -38,7 +38,7 @@ This sample requires the following:
 5.	On the **What do you want to do page**, click **Add an application my organization is developing**.
 6.	On the **Tell us about your application page**, specify **O365-Win-Profile** for the application name and select **NATIVE CLIENT APPLICATION** for type.
 7.	Click the arrow icon on the bottom-right corner of the page.
-8.	On the **Application information** page, specify a **Redirect URI**, for this example, you can specify http://localhost/profileSample, and then select the checkbox in the lower-right hand corner of the page. Remember this value for the below section **Getting the ClientID and RedirectUri into the project**.
+8.	On the **Application information** page, specify a **Redirect URI**, for this example, you can specify http://localhost/profileSample, and then select the checkbox in the lower-right hand corner of the page. Remember this value for the following **Build and debug** section.
 9.	Once the application has been successfully added, you will be taken to the **Quick Start** page for the application. From here, select **Configure** in the top menu.
 10.	Under **permissions to other applications**, add the **Office 365 unified API (preview)** application, and select the **Read items in all site collections**, **Read users' files**, and **Read all users' basic profiles** permissions.
 11.	Copy the value specified for **Client ID** on the **Configure** page, and be sure to remember the value you specified for the redirect URI.
