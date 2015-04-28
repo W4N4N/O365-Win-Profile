@@ -22,7 +22,6 @@ The first page presents you with a list of users. The second page displays infor
 
 This sample requires the following:  
   * Visual Studio 2013 with Update 3.  
-  * [Office 365 API Tools version 1.3.41104.1](http://aka.ms/k0534n).  
   * An Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) that includes the resources that you need to start building Office 365 apps.
   * A Microsoft Azure tenant to register your application. Azure Active Directory provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
 
@@ -40,7 +39,7 @@ This sample requires the following:
 7.	Click the arrow icon on the bottom-right corner of the page.
 8.	On the **Application information** page, specify a **Redirect URI**, for this example, you can specify http://localhost/profileSample, and then select the checkbox in the lower-right hand corner of the page. Remember this value for the following **Build and debug** section.
 9.	Once the application has been successfully added, you will be taken to the **Quick Start** page for the application. From here, select **Configure** in the top menu.
-10.	Under **permissions to other applications**, add the **Office 365 unified API (preview)** application, and select the **Read items in all site collections**, **Read users' files**, and **Read all users' basic profiles** permissions.
+10.	Under **permissions to other applications**, select **Add application**. In the dialog box, select the **Office 365 unified API (preview)** application. After you return to the application configuration page, select the **Read items in all site collections**, **Read users' files**, and **Access directory as the signed in user** permissions.
 11.	Copy the value specified for **Client ID** on the **Configure** page, and be sure to remember the value you specified for the redirect URI.
 12.	Click **Save** in the bottom menu.
 
