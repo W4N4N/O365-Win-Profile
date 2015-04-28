@@ -62,8 +62,8 @@ This sample requires the following:
 The NuGet packages used in this sample will load automatically when you build the solution. If you want to create an app that uses the unified endpoint, be sure to install the following packages:
 
 1. [Microsoft.IdentityModel.Clients.ActiveDirectory v.2.14](http://aka.ms/rmclss)
-2. Microsoft.Graph
-3. Microsoft.OData.ProxyExtensions v1.0.30
+2. [Microsoft.Graph v.0.2.5-rc](https://www.nuget.org/packages/Microsoft.Graph/0.2.5-rc)
+3. [Microsoft.OData.ProxyExtensions v1.0.30](https://www.nuget.org/packages/Microsoft.OData.ProxyExtensions/)
 
 <a name="questions"></a>
 ##Questions and comments##
