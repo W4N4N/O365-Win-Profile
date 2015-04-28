@@ -28,7 +28,7 @@
             <Button Grid.Row="0" x:Name="ConnectButton" HorizontalAlignment="Right" Content="disconnect" FontSize="10" Click="ConnectButton_Click" Height="40" Width="100"/>
 
 
-            <GridView  SelectionChanged="UsersList_SelectionChanged"  Visibility="Collapsed" x:Name="UsersList" Grid.Row="1" >
+            <GridView  SelectionChanged="UsersList_SelectionChanged" Visibility="Collapsed" x:Name="UsersList" Grid.Row="1" Margin="50,0,0,0" >
                 <GridView.ItemContainerStyle >
                     <Style TargetType="GridViewItem">
                         <Setter Property="HorizontalAlignment" Value="Left"/>
