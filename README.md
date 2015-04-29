@@ -77,6 +77,7 @@ The NuGet packages used in this sample will load automatically when you build th
 
 - [Office 365 profile sample for Android](http://aka.ms/o365-android-profile)
 - [Office 365 profile sample for iOS](http://aka.ms/o365-iOS-profile)
+- [Office 365 unified API overview (preview)](https://msdn.microsoft.com/en-us/office/office365/howto/office-365-unified-api-overview)
 - [Overview of developing on the Office 365 platform](http://aka.ms/kbwa5c)
 - [Office 365 APIs starter projects and code samples](http://aka.ms/x1kpnz)
 - [Office developer code samples](http://aka.ms/afh45z)
