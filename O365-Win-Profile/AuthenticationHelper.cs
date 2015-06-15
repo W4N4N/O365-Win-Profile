@@ -25,8 +25,8 @@ namespace O365_Win_Profile
         // The AuthorizationUri is added as a resource in App.xaml when you regiter the app with 
         // Office 365. As a convenience, we load that value into a variable called _commonAuthority, adding _common to this Url to signify
         // multi-tenancy. This way it will always be in sync with whatever value is added to App.xaml.
-        
-        private static readonly string CommonAuthority = App.Current.Resources["ida:AuthorizationUri"].ToString() + @"/Common";
+
+        private static readonly string CommonAuthority = App.Current.Resources["ida:AADInstance"].ToString() + @"Common";
         public const string ResourceBetaUrl = "https://graph.microsoft.com/beta/";
         public const string ResourceUrl = "https://graph.microsoft.com/";
 
