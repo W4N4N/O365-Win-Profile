@@ -25,7 +25,7 @@ This sample requires the following:
   * An Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) that includes the resources that you need to start building Office 365 apps.
   * A Microsoft Azure tenant to register your application. Azure Active Directory provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
 
-**Important**: You will also need to ensure your Azure subscription is bound to your Office 365 tenant. To do this see the Active Directory team's blog post, [Creating and Managing Multiple Windows Azure Active Directories](http://aka.ms/lrb3ln). In this post, the *Adding a new directory* section will explain how to do this. You can also read [Set up Azure Active Directory access for your Developer Site](http://aka.ms/fv273q) for more information.
+**Important**: You will also need to ensure your Azure subscription is bound to your Office 365 tenant. To do this see the Active Directory team's blog post, [Creating and Managing Multiple Windows Azure Active Directories](http://blogs.technet.com/b/ad/archive/2013/11/08/creating-and-managing-multiple-windows-azure-active-directories.aspx). In this post, the *Adding a new directory* section will explain how to do this. You can also read [Set up your Office 365 development environment](https://msdn.microsoft.com/office/office365/howto/setup-development-environment#bk_CreateAzureSubscription) for more information.
 
 <a name="register"></a>
 ##Register and configure the app
@@ -75,13 +75,17 @@ The NuGet packages used in this sample will load automatically when you build th
 <a name="additional-resources"></a>
 ## Additional resources ##
 
-- [Office 365 profile sample for Android](http://aka.ms/o365-android-profile)
-- [Office 365 profile sample for iOS](http://aka.ms/o365-iOS-profile)
+- [Office 365 profile sample for Android](https://github.com/OfficeDev/O365-Android-Profile/)
+- [Office 365 profile sample for iOS](https://github.com/OfficeDev/O365-iOS-Profile/)
 - [Office 365 unified API overview (preview)](https://msdn.microsoft.com/en-us/office/office365/howto/office-365-unified-api-overview)
-- [Overview of developing on the Office 365 platform](http://aka.ms/kbwa5c)
-- [Office 365 APIs starter projects and code samples](http://aka.ms/x1kpnz)
-- [Office developer code samples](http://aka.ms/afh45z)
-- [Office dev center](http://aka.ms/uftrm1)
+- [Office 365 APIs platform overview](https://msdn.microsoft.com/office/office365/howto/platform-development-overview)
+- [Office 365 API code samples and videos](https://msdn.microsoft.com/office/office365/howto/starter-projects-and-code-samples)
+- [Office developer code samples](http://dev.office.com/code-samples)
+- [Office dev center](http://dev.office.com/)
+- [Connecting to Office 365 in Windows Store, Phone, and universal apps](https://github.com/OfficeDev/O365-Win-Connect)
+- [Office 365 Code Snippets for Windows](https://github.com/OfficeDev/O365-Win-Snippets)
+- [Office 365 Starter Project for Windows Store App](https://github.com/OfficeDev/O365-Windows-Start)
+- [Office 365 REST API Explorer for Sites](https://github.com/OfficeDev/Office-365-REST-API-Explorer)
 
 ## Copyright
 Copyright (c) 2015 Microsoft. All rights reserved.
