@@ -21,7 +21,7 @@ The first page presents you with a list of users. The second page displays infor
 ## Prerequisites ##
 
 This sample requires the following:  
-  * Visual Studio 2013 with Update 3.  
+  * Visual Studio 2013 with Update 4.  
   * An Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) that includes the resources that you need to start building Office 365 apps.
   * A Microsoft Azure tenant to register your application. Azure Active Directory provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](http://aka.ms/jjm0q7).
 
